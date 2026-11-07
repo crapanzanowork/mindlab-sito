@@ -14,7 +14,7 @@
   var pref; try { pref = w.localStorage.getItem('ml_vertical'); } catch (e) {}
   if (pref === '1') d.body.classList.add('vertical');
   var tog = d.getElementById('vertToggle');
-  function isHz() { return !d.body.classList.contains('vertical') && w.innerWidth > 860 && !reduce; }
+  function isHz() { return !d.body.classList.contains('vertical') && w.innerWidth > 860 && w.innerHeight > 560 && !reduce; }
   function labelToggle() { if (tog) tog.textContent = d.body.classList.contains('vertical') ? 'Scorri in orizzontale' : 'Scorri in verticale'; }
   labelToggle();
   if (tog) tog.addEventListener('click', function () { var v = d.body.classList.toggle('vertical'); try { w.localStorage.setItem('ml_vertical', v ? '1' : '0'); } catch (e) {} labelToggle(); hz.scrollLeft = 0; w.scrollTo(0, 0); });

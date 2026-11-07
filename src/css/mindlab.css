@@ -215,7 +215,7 @@ body.home{overflow:hidden}
 .hz-arrows svg{width:18px;height:18px}
 .hz-hint{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;opacity:.6}
 .hz-progress{position:fixed;left:0;top:0;height:3px;background:var(--ember);z-index:90;width:0;transition:width .9s var(--ease)}
-@media (max-width:860px),(prefers-reduced-motion:reduce){
+@media (max-width:860px),(max-height:560px),(prefers-reduced-motion:reduce){
   body.home{overflow:auto}
   .hz{position:static;display:block;overflow:visible}
   .panel{width:auto;height:auto;min-height:var(--vh);display:block;padding-top:clamp(90px,16vw,120px);padding-bottom:70px}
@@ -427,3 +427,4 @@ body.home .chat-fab{display:none}
 .lockscreen.shake .lock-in{animation:lshake .4s}
 @keyframes lshake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
 .lockscreen .mark circle{fill:var(--sage)}
+@media (max-height:820px) and (min-width:861px){.how-card .how .muted{display:none}.how-card .how{gap:6px}}

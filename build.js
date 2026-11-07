@@ -106,7 +106,7 @@ addPage({ out: 'index.html', title: '', bodyClass: 'home', noFooter: true, scrip
     return `<div class="hz-progress" id="hzProg"></div>
 <div class="hz" id="hz" tabindex="-1">
 <section class="panel" data-theme="light" id="p1" aria-label="Benvenuto"><div class="panel-in"><div class="hero-grid">
- <div class="stack" style="--s:clamp(16px,3vh,30px)"><p class="t-caps sage rv">Un corso per te, per stare bene con te stesso</p>
+ <div class="stack" style="--s:clamp(10px,2.2vh,26px)"><p class="t-caps sage rv">Un corso per te, per stare bene con te stesso</p>
  <h1 class="t-hero"><span class="mask"><span>Uno spazio</span></span><span class="mask"><span style="--d:.12s">per <span class="it">fermarsi</span>.</span></span></h1>
  <p class="t-lead measure-s rv" style="--d:.4s">Impari a stare con quello che senti, a lasciar andare ciò che pesa, a ritrovare il respiro. Scegli un percorso o una lezione alla volta, nei giorni che ti servono.</p>
  <div class="pills rv" style="--d:.55s;gap:12px"><a class="btn btn-ink" href="__R__calendario.html">Scopri i corsi${ARR}</a><a class="btn btn-ghost" href="__R__conversazione.html">Parla con noi</a></div>
@@ -125,12 +125,12 @@ addPage({ out: 'index.html', title: '', bodyClass: 'home', noFooter: true, scrip
  <ul class="list" style="--x:1">${pros.map(p => `<li><span class="n">${GIORNI[p.giorno].slice(0, 3).toUpperCase()}</span><span>${esc(p.nome)}</span><span class="t-small">${p.ora}</span></li>`).join('')}</ul>
  <p class="t-small muted">Se salti una lezione, la recuperi in un altro orario o nell’edizione dopo.</p></div></div></div></section>
 
-<section class="panel" data-theme="light" id="p3" aria-label="Corsi"><div class="panel-in stack" style="--s:clamp(14px,2.4vh,24px)">
+<section class="panel" data-theme="light" id="p3" aria-label="Corsi"><div class="panel-in stack" style="--s:clamp(10px,1.8vh,22px)">
  <div style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap"><div class="stack"><p class="t-caps sage">Il catalogo</p><h2 class="t-h1">Dieci modi per <span class="it">cominciare</span>.</h2></div>${btn('__R__corsi.html', 'Tutti i corsi', 'btn-ghost')}</div>
  <p class="rail-hint"><svg width="40" height="12" viewBox="0 0 40 12" aria-hidden="true"><path d="M1 6h36M31 1l6 5-6 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Scorri le schede</p>
  <div class="rail" style="padding-bottom:10px">${corsi.slice(0, 6).map((c, i) => courseCard(c, i === 0 ? 'dark' : i === 3 ? 'sage' : '')).join('')}</div></div></section>
 
-<section class="panel on-mist" data-theme="light" id="p4" aria-label="Professionisti"><div class="panel-in stack" style="--s:clamp(14px,2.4vh,24px)">
+<section class="panel on-mist" data-theme="light" id="p4" aria-label="Professionisti"><div class="panel-in stack" style="--s:clamp(10px,1.8vh,22px)">
  <div style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap"><div class="stack"><p class="t-caps sage">Il gruppo</p><h2 class="t-h1">Sei professionisti, <span class="it">un solo metodo</span>.</h2></div>${btn('__R__professionisti.html', 'Conosci il team', 'btn-ghost')}</div>
  <div class="rail" style="padding-bottom:10px">${pros.map(proCard).join('')}</div></div></section>
 
@@ -139,7 +139,7 @@ addPage({ out: 'index.html', title: '', bodyClass: 'home', noFooter: true, scrip
  <p class="t-lead measure-s">Scegli, paga, ricevi la mail con il link alla videochiamata. Un promemoria prima di ogni lezione, e alla fine un attestato con il suo codice.</p></div>
  <ol class="list" style="--x:1">${[['Scegli', 'Un corso intero o lezioni singole, dal catalogo o dalla settimana.'], ['Prenota', 'Occupi i tuoi slot nella tua area personale.'], ['Pratica', 'Entri dal link che ti arriva per mail, da dove vuoi.'], ['Attestato', 'A fine corso, con un codice verificabile.']].map(([t, d], i) => `<li><span class="n">0${i + 1}</span><span><b>${t}.</b> ${d}</span><span></span></li>`).join('')}</ol></div></div></section>
 
-<section class="panel" data-theme="light" id="p6" aria-label="Pillole"><div class="panel-in stack" style="--s:clamp(14px,2.4vh,24px)">
+<section class="panel" data-theme="light" id="p6" aria-label="Pillole"><div class="panel-in stack" style="--s:clamp(10px,1.8vh,22px)">
  <div style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap"><div class="stack"><p class="t-caps sage">Pillole</p><h2 class="t-h1">Letture brevi, <span class="it">per tornare in sé</span>.</h2></div>${btn('__R__blog.html', 'Tutte le pillole', 'btn-ghost')}</div>
  <div class="grid g3" style="--g:18px">${blog.slice(0, 3).map(postCard).join('')}</div></div></section>
 
