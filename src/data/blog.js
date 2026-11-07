@@ -1,0 +1,55 @@
+// Pillole del blog (EX: testi di esempio, scritti per la bozza). `accesso`: 'pubblico' oppure 'iscritti'.
+// I paragrafi sono HTML semplice. `pratica` è un esercizio breve da fare subito.
+module.exports = [
+  { slug: 'il-respiro-che-hai-gia', titolo: 'Il respiro che hai già', cat: 'Pratica', data: '2026-11-02', min: 2, accesso: 'pubblico', autore: 'chiara',
+    estratto: 'Non c’è niente da fare con il respiro, tranne accorgersi di lui.',
+    testo: ['Il respiro non ha bisogno di essere corretto. Va avanti da solo da quando sei nato, anche adesso, mentre leggi.',
+      'Spesso pensiamo che respirare bene voglia dire respirare profondo. In realtà, la prima cosa che serve è un’altra: accorgersi di come stai respirando, senza cambiarlo.',
+      '«Il respiro è l’unica pratica che porti sempre con te.»',
+      'Prova adesso: appoggia le mani sulle ginocchia, senti il contatto, e per tre respiri guarda soltanto dove lo percepisci di più. Naso, petto, pancia. Se la mente se ne va, e se ne andrà, riportala qui. Non è un errore, è la pratica.'],
+    pratica: 'Tre respiri, una domanda: “dove lo sento di più?”' },
+
+  { slug: 'tre-minuti-prima-di-un-esame', titolo: 'Tre minuti prima di un esame', cat: 'Studio', data: '2026-10-26', min: 3, accesso: 'pubblico', autore: 'luca',
+    estratto: 'Una piccola routine per entrare in aula con la testa più ferma.',
+    testo: ['La tensione prima di un esame non è un nemico: è energia che non sa dove andare. Il problema è quando comincia a parlare al posto tuo.',
+      'Un modo semplice per darle una direzione è una pratica di tre minuti: piedi a terra, spalle morbide, respiro lento. Poi tre domande: cosa sento nel corpo? Quali pensieri ci sono? Di cosa ho bisogno adesso?',
+      'Non servono risposte brillanti. Serve fermarsi abbastanza da vedere che il pensiero “non ce la farò” è un pensiero, e che sotto c’è ancora una persona che ha studiato.'],
+    pratica: 'Piedi a terra, tre respiri lenti, tre domande.' },
+
+  { slug: 'stanchi-non-pigri', titolo: 'Stanchi, non pigri', cat: 'Riflessione', data: '2026-10-19', min: 3, accesso: 'pubblico', autore: 'giulia',
+    estratto: 'La stanchezza di fine giornata non è sempre una colpa.',
+    testo: ['Si dice “sono pigro” quando in realtà si è stanchi di cose che non si vedono: le decisioni prese, le attese, le parole trattenute.',
+      'Chiamare pigrizia la stanchezza è un modo di giudicarsi senza ascoltarsi. E quando ci si giudica, si resta fermi di più.',
+      '«Ascoltare la stanchezza non significa arrendersi: significa sapere da dove ripartire.»',
+      'Una domanda gentile può bastare: “di cosa sono stanco, davvero?”. Spesso la risposta indica una cosa piccola e fattibile: una pausa, un no, una passeggiata.'],
+    pratica: 'Una domanda, scritta su un foglio: “di cosa sono stanco, davvero?”' },
+
+  { slug: 'il-corpo-parla-prima-della-mente', titolo: 'Il corpo parla prima della mente', cat: 'Corpo', data: '2026-10-12', min: 4, accesso: 'iscritti', autore: 'chiara',
+    estratto: 'Mascella, spalle, stomaco: i segnali che arrivano prima dei pensieri.',
+    testo: ['Prima di capire che siamo agitati, il corpo lo sa già: la mascella si chiude, le spalle salgono, lo stomaco si stringe.',
+      'Imparare a leggere questi segnali è una delle prime cose che si fa nel percorso MBSR, perché permette di accorgersi dello stress mentre è ancora piccolo.',
+      'In questa pillola trovi una breve esplorazione guidata del corpo, da fare in sei minuti, e tre domande da portare con te durante la giornata.'],
+    pratica: 'Scansione del corpo di sei minuti (contenuto riservato).' },
+
+  { slug: 'una-pausa-di-dieci-minuti', titolo: 'Una pausa di dieci minuti', cat: 'Pratica', data: '2026-10-05', min: 4, accesso: 'iscritti', autore: 'marco',
+    estratto: 'Come costruire una piccola pausa che regge anche nelle giornate piene.',
+    testo: ['Le pause che reggono sono quelle piccole. Dieci minuti, sempre alla stessa ora, nello stesso posto: la ripetizione è più importante della durata.',
+      'In questa pillola trovi uno schema semplice per costruire la tua pausa quotidiana e tre modi per tornarci quando ti dimentichi.',
+      'Il contenuto completo, con la traccia guidata, è riservato agli iscritti.'],
+    pratica: 'Pausa guidata di dieci minuti (contenuto riservato).' },
+
+  { slug: 'lasciare-andare-senza-mollare', titolo: 'Lasciare andare senza mollare', cat: 'Riflessione', data: '2026-09-28', min: 3, accesso: 'pubblico', autore: 'davide',
+    estratto: 'Una differenza che nello sport si impara presto: tenere la presa o tenere il controllo.',
+    testo: ['Un portiere che stringe troppo la palla non la tiene meglio: si irrigidisce. Con i pensieri succede lo stesso.',
+      'Lasciare andare non vuol dire smettere di impegnarsi. Vuol dire riconoscere il confine tra ciò su cui puoi agire e ciò che non dipende da te.',
+      '«Puoi allenare la presa. Non puoi decidere dove cadrà il pallone.»',
+      'Dopo un errore, il primo gesto utile è semplice: un respiro, i piedi a terra, lo sguardo sul prossimo compito.'],
+    pratica: 'Dopo un errore: un respiro, i piedi a terra, il prossimo compito.' },
+
+  { slug: 'quando-la-sera-non-spegne', titolo: 'Quando la sera non si spegne', cat: 'Sonno', data: '2026-09-21', min: 3, accesso: 'pubblico', autore: 'luca',
+    estratto: 'Tre piccole abitudini per accompagnare la testa verso la notte.',
+    testo: ['La sera la testa fa un bilancio: quello che è andato storto torna, quello che manca resta. Non è colpa tua, è il momento in cui finalmente non stai facendo altro.',
+      'Tre abitudini aiutano a rallentare: una luce più bassa un’ora prima, un foglio dove appoggiare i pensieri, e un respiro con l’espirazione un po’ più lunga dell’inspirazione.',
+      'Nessuna promessa di addormentarti subito. L’obiettivo è smettere di combattere contro la veglia: spesso è già metà del sonno.'],
+    pratica: 'Un respiro con l’espirazione più lunga: inspira in 4, espira in 6.' },
+];
