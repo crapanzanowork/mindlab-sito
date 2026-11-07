@@ -422,7 +422,7 @@ body.home .chat-fab{display:none}
 .lock-box{display:grid;gap:14px;justify-items:center;text-align:center;max-width:380px;width:100%}
 .lock-box .mark{width:64px;height:64px}
 .lock-box .muted{color:var(--on-dark-muted)}
-.lock-in{text-align:center;letter-spacing:.5em;font-size:1.4rem;max-width:220px;background:transparent;color:var(--on-dark);border:1px solid var(--on-dark-muted)}
+.lock-in{text-align:center;letter-spacing:.12em;font-size:1.2rem;max-width:300px;background:transparent;color:var(--on-dark);border:1px solid var(--on-dark-muted)}
 .lock-err{min-height:1.4em;color:var(--ember);font-size:.9rem}
 .lockscreen.shake .lock-in{animation:lshake .4s}
 @keyframes lshake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}

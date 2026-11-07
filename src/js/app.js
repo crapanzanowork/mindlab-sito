@@ -98,7 +98,7 @@
   if (document.documentElement.classList.contains('locked')) setTimeout(function () { inp.focus(); }, 50);
   f.addEventListener('submit', function (e) {
     e.preventDefault();
-    var bytes = new TextEncoder().encode('mindlab-bozza:' + inp.value.trim());
+    var bytes = new TextEncoder().encode('mindlab-bozza:' + inp.value.trim().toLowerCase());
     (window.crypto && crypto.subtle ? crypto.subtle.digest('SHA-256', bytes) : Promise.reject()).then(function (h) {
       var hex = Array.prototype.map.call(new Uint8Array(h), function (b) { return ('0' + b.toString(16)).slice(-2); }).join('');
       if (hex === g.getAttribute('data-h')) { try { localStorage.setItem('ml_gate', hex); } catch (x) {} document.documentElement.classList.remove('locked'); }
